@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <!-- Specify a JDBC datasource -->
+    <!--  
+    <Resource name="jdbc/testdb" auth="Container"
+        type="javax.sql.DataSource" username="root" password="flashkit"
+        driverClassName="org.gjt.mm.mysql.Driver"
+        url="jdbc:mysql://192.168.1.55/db_gps"
+        maxActive="10" maxIdle="4" /> -->
+        
+       <!--   <Resource name="jdbc/testdb1" auth="Container"
+        type="javax.sql.DataSource" username="root" password="flashkit"
+        driverClassName="org.gjt.mm.mysql.Driver"
+        url="jdbc:mysql://192.168.1.55/db_gpsExceptions"
+        maxActive="10" maxIdle="4" />-->
+ 
+ <Resource name="jdbc/diary" auth="Container" 
+ 		 type="javax.sql.DataSource" maxActive="1" maxIdle="2"
+ 		 maxWait="-1" username="diary" password="d@1ry"
+ 		 driverClassName="com.mysql.jdbc.Driver"
+ 		 url="jdbc:mysql://192.168.1.55:3306/db_CustomerComplaints?autoReconnect=true"/>
+
+</Context>

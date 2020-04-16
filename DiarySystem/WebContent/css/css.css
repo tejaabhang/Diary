@@ -1,0 +1,92 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #cccccc; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #000000; SCROLLBAR-3DLIGHT-COLOR: #ffffff; SCROLLBAR-ARROW-COLOR: #777777; SCROLLBAR-TRACK-COLOR: #ffffff; SCROLLBAR-DARKSHADOW-COLOR: #ffffff
+}
+.formElement {
+  border: solid 1px #000000;
+  font-size: 10px;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  color: #000000;
+  margin: 0px;
+}
+.bodyText {
+	PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 6px; COLOR: #333333; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.copyright
+{
+    FONT-SIZE: 8pt;
+    COLOR: #000080;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+
+table.stats
+{text-align: center;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ;
+font-weight: normal;
+font-size: 11px;
+color: #fff;
+width: 750px;
+
+border: 0px;
+border-collapse: collapse;
+border-spacing: 0px;}
+
+table.stats td
+{
+color: #000;
+padding: 4px;
+text-align: center;
+border: 1px #808080 solid;}
+
+table.stats td.hed
+{
+color: #696900;
+padding: 4px;
+text-align: center;
+border-bottom: 2px #808080 solid;
+font-size: 12px;
+font-weight: bold;} 
+
+table.stats td.hed1
+{
+color: #696969;
+padding: 4px;
+text-align: center;
+border-bottom: 2px #808080 solid;
+font-size: 12px;
+font-weight: bold;} 
+
+
+table.sortable
+{text-align: center;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ;
+font-weight: normal;
+font-size: 11px;
+color: #fff;
+width: 750px;
+/*background-color: #666; */
+border: 1px;
+border-collapse: collapse;
+border-spacing: 0px;}
+
+table.sortable td
+{
+/*background-color: white; */
+color: 	#000000;
+padding: 4px;
+font-weight: normal;
+font-size: 13px;
+
+text-align: left;
+border: 1px #808080 solid;}
+
+/* Sortable tables  */
+table.sortable thead {
+/*background-color: #DCDCDC;*/
+color: #696969;
+padding: 4px;
+text-align: center;
+border-bottom: 2px #808080 solid;
+font-size: 13px;
+font-weight: bold;}
+

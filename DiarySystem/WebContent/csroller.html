@@ -1,0 +1,86 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<title> Scrolling Background </title>
+<script>
+<!--
+var DefScrollSpeed = 10;
+var DefScrollDirection = 'horizontal'; // (horizontal, vertical)
+
+
+function BGScroller(ID, SD, SS, BG)
+{
+    Elem = GetElem(ID);
+    if(!Elem)
+    {
+        return false;
+    }
+    else
+    {
+        if(BG)
+        {
+            Elem.style.backgroundImage = 'url("' + BG + '")';
+        }
+        SS =  SS ? SS : DefScrollSpeed;
+        SD =  SD ? SD : DefScrollDirection;
+        BGScroll(ID, SD, SS, 0);
+    }
+}
+function BGScroll(ID, SD, SS, Pos)
+{
+    Elem = GetElem(ID);
+    Elem.style.backgroundPosition = (SD == 'horizontal') ? Pos++ : '0 ' + Pos++;
+    window.setTimeout('BGScroll("' + ID + '", "' + SD + '", ' + SS + ', ' + Pos + ' )', SS);
+}
+function BGScrollerInit()
+{
+    // Creating background scroller
+    // Parameters are
+    // 1. Element Id
+    // 2. Scrolling Direction (horizontal, vertical)
+    // 3. Scrolling Delay (Smaller means faster)
+    // 4. Background Image
+    // Except (1) all other parameters are optional
+    BGScroller("Elem1", "vertical");
+    BGScroller("Elem2");
+    BGScroller("Elem3", "vertical");
+    BGScroller("Elem4", 'horizontal', 30, 'images/logo.jpg');
+}
+function GetElem(ID)
+{
+    return document.all ? document.all[ID] : (document.getElementById(ID) ? document.getElementById(ID) : false);
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+body{background:#F2F2F2;}
+.tblScrolling{width:150px;height:150px;border:1px #C0C0C0 solid;font:bold 12px Arial;color:#333333;}
+.tblScrolling td{vertical-align:middle;text-align:center;width:50%;height:50%;}
+//-->
+</style>
+</head>
+
+<body onLoad="BGScrollerInit()">
+<table style="width:100%;height:100%;">
+<tr><td>
+
+<center><table cellspacing="0" class="tblScrolling">
+<tr>
+    <td id="Elem1" style="background-image:url('images/logo.jpg');"></td>
+   
+</tr>
+
+</table></center>
+
+</td>
+</tr>
+<tr>
+    <td  align="cenetr"><marquee width="100px"><img src="images/l1.jpg"><img src="images/l2.jpg"><img src="images/l3.jpg"><img src="images/l4.jpg"><img src="images/l5.jpg"><img src="images/l6.jpg"><img src="images/l7.jpg"></marquee></td>
+   
+</tr>
+</table>
+</body>
+</html>
+
+

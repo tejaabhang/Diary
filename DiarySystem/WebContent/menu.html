@@ -1,0 +1,387 @@
+<html>
+<head>
+<style type="text/css">
+
+#dropmenudiv{
+position:absolute;
+border:1px solid black;
+border-bottom-width: 0;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+}
+
+#dropmenudiv a{
+width: 100%;
+display: block;
+text-indent: 3px;
+border-bottom: 1px solid black;
+padding: 1px 0;
+text-decoration: none;
+font-weight: bold;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+background-color: yellow;
+}
+
+</style>
+
+<script type="text/javascript">
+
+/***********************************************
+* AnyLink Drop Down Menu- ?? Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Contents for menu 1
+var menu1=new Array();
+var menu2=new Array();
+var menu3=new Array();
+var menu4=new Array();
+var menu5=new Array();
+var menu6=new Array();
+var menu7=new Array();
+var menu8=new Array();
+var menu9=new Array();
+var menu10=new Array();
+var menu11=new Array();
+var menu12=new Array();
+var menu13=new Array();
+var menu14=new Array();
+var menu15=new Array();
+
+
+menu10[0]='<a href="techspcomment.jsp?comment=techunit&parameter=tech">SPECIAL COMMENT</a>'
+menu10[1]='<a href="singleunittransfer1.jsp?comment=techunit&parameter=tech">Courier Entry Form</a>'
+menu10[2]='<a href="details1.jsp?comment=techunit&parameter=tech&type=Dispatched&tech=tech">All Dispatched Units</a>'
+menu10[3]='<a href="IntransitSuperTech.jsp?&parameter=tech&type=Dispatched&tech=tech">Intransit Units</a>'
+menu10[4]='<a href="techRecieved.jsp?&parameter=tech&type=Dispatched&tech=tech">Recieved Units In Transworld</a>'
+
+	    menu13[0]='<a href="techspcomment.jsp?comment=techunit&parameter=tech">SPECIAL COMMENT</a>'
+		//menu13[1]='<a href="singleunittransfer1.jsp?comment=techunit&parameter=tech">Courier Entry Form</a>'
+
+			menu13[1]='<a href="unitTransferToTechnician.jsp">Pending Unit Transfer</a>'
+
+			menu13[2]='<a href="details1.jsp?comment=techunit&parameter=tech&type=Dispatched&tech=tech">All Dispatched Units</a>'
+		menu13[3]='<a href="transitunit.jsp">Intransit Units</a>'
+		menu13[4]='<a href="techRecieved.jsp?parameter=tech&type=Dispatched&tech=tech">Recieved Units In Transworld</a>'
+	    menu13[5]='<a href="techattend.jsp">TECH ATTENDANCE</a>'
+	    menu13[6]='<a href="incommingcalls.jsp">CALL CAPTURE FORM</a>'
+
+	    menu14[0]='<a href="MISunithistory.jsp">MIS UNIT REPORT</a>'
+	    	menu14[1]='<a href="mainpage1.jsp">MAIN PAGE</a>'
+	    		menu14[2]='<a href="liveticket.jsp">Ticket Report</a>'
+
+	    	menu15[0]='<a href="mydiary.jsp?parameter=tech&type=Dispatched&tech=tech">VEHICLE AVAILABLE</a>'
+	    	menu15[1]='<a href="multiplesearch.jsp?parameter=tech&type=Dispatched&tech=tech">MULTIPLE SEARCH</a>'
+	    		 menu15[2]='<a href="complaintsoverdue.jsp?parameter=tech&type=Dispatched&tech=tech">COMPLAINTS OVER-DUE</a>'
+	     
+        
+
+	        	
+
+
+
+
+			     
+	
+menu12[0]='<a href="IntransitForTransporter.jsp">Intransit Units</a>'
+	
+			
+menu1[0]='<a href="mainpage1.jsp">MAIN PAGE</a>'
+menu1[1]='<a href="dailyreport1.jsp">DAILY REPORT</a>'
+menu1[2]='<a href="DailReportnew.jsp">STATUS REPORT</a>'
+menu1[3]='<a href="techattendreport.jsp">TECH ATTEND. REPORT</a>'
+menu1[4]='<a href="complaintcharges.jsp">COMP CHARGES</a>'
+menu1[5]='<a href="closetechspcomment.jsp">SPECIAL COMMENT (Report)</a>'
+menu1[6]='<a href="showmissingunits.jsp">UNIT MISSING</a>'
+menu1[7]='<a href="SLAReport.jsp">SLA Report</a>' 
+
+
+
+menu1[8]='<a href="replacementrpt.jsp">REPLACEMENT REPORT (for no warranty vehicles)</a>'
+menu1[9]='<a href="Allreplacement.jsp">REPLACEMENT REPORT (for All vehicles)</a>'
+menu1[10]='<a href="compnotallocated.jsp">COMP NOT ALLOCATED VEH</a>'
+menu1[11]='<a href="MISunithistory.jsp">MIS UNIT REPORT</a>'
+menu1[12]='<a href="unconfigueredUnits.jsp">Unconfigured units</a>'
+menu1[13]='<a href="CodeVersionReport.jsp">CodeVersion Report</a>'
+menu1[14]='<a href="DeviceOverviewReport.jsp">Device Overview Report</a>'
+menu1[15]='<a href="FleetViewDashBoard.jsp">FleetView DashBoard</a>'
+//menu1[16]='<a href="detailsOfIncidentReport.jsp">Incident Details Report</a>'
+menu1[16]='<a href="DetailsIncident.jsp">Incident Details Report</a>'
+menu1[17]='<a href="IncidentReport.jsp">Incident Report</a>'
+menu1[18]='<a href="SimNumberStatusReport.jsp">Sim Master Report </a> '
+menu1[19]='<a href="SimNumberBillableReport.jsp">Sim Master Billable Report </a> '
+	menu1[20]='<a href="AnnualServiceContractReport.jsp">Annual Service Contract Report </a> '
+menu6[21]='<a href="addinstn.jsp">Add Instruction</a>'
+	menu1[21]='<a href="ProfileMismatchReport.jsp">Profile Mismatch Report </a> '
+
+	
+		menu1[21]='<a href="ASCServiceDetails.jsp">ASC Service Details </a> '
+			menu1[22]='<a href="TechnicianIndexReport.jsp">TECHNICIAN INDEX REPORT</a>'
+	//menu1[12]='<a href="SLAReport_new.jsp">Monthwise SLA Report</a>' 
+
+		
+//menu1[11]='<a href="FieldTestReport.jsp">FieldTestReport</a>'
+menu11[0]='<a href="remdelvehs.jsp">REM/DEL VEHICLES</a>'
+menu11[1]='<a href="Reallocatedveh.jsp">VEHICLES REPORT</a>'
+menu11[2]='<a href="groupmainpage.jsp"> GROUP PAGE</a>'
+menu11[3]='<a href="unitlifereport.jsp"> UNIT REPORT</a>'
+menu11[4]='<a href="SMSReport.jsp"> SMS ALERT REPORT</a>'
+menu11[5]='<a href="mobiledeactive_report.jsp"> MOBILE DE-ACTIVATION REPORT</a>'
+menu11[6]='<a href="transporterdetail_history.jsp"> TRANSPORTER DETAILS REPORT</a>'
+menu11[7]='<a href="QuickTestReport.jsp">QuickTest REPORT</a>'
+menu11[8]='<a href="QTwithReplacement.jsp">QuickTest with Replacement REPORT</a>'
+menu11[9]='<a href="SendmailReport.jsp">Send mail report</a>'
+menu11[10]='<a href="FleetViewComplaintReport1.jsp">Complaints Report</a>'
+menu11[11]='<a href="ServiceProviderMonthlyReport.jsp" target="_blank">Service Provider Bill Report</a>'
+menu11[12]='<a href="ComplaintSettings.jsp" target="_blank">Complaint Settings</a>'
+menu11[13]='<a href="complaintCatSettings.jsp" target="_blank">Complaints Category Settings</a>'
+menu11[14]='<a href="ComplaintMailAdder.jsp" target="_blank">Registration of Mail Complaints</a>'
+menu11[15]='<a href="ExceptionSummary.jsp" target="_blank">Exception Summary Report</a>'
+menu11[16]='<a href="ExceptionDailySummaryReport.jsp" target="_blank">Daily Exception Report</a>'
+menu11[17]='<a href="SimmasterReport.jsp" target="_blank">Simmaster Report</a>'
+menu11[18]='<a href="SimmasterUpload.jsp" target="_blank">Sim Upload</a>'
+menu11[19]='<a href="PeripheralDevice.jsp" target="_blank">Peripheral Report</a>'
+menu11[20]='<a href="simchangereport.jsp">Sim Change Report</a>'
+menu11[21]='<a href="SearchTrip.jsp">Search Trip</a>'
+	menu11[22]='<a href="ServiceProviderBillingUpload.jsp">SimBillUpload</a>'
+		
+<!-- menu2[7]='<a href="remuittemp.jsp">TEMP REMOVAL</a>'  -->
+
+menu2[0]='<a href="addcontact.jsp">ADD TRANSPORTER CONTACT</a>'
+menu2[1]='<a href="NewaddUnit.jsp">ADD UNIT</a>'
+menu2[2]='<a href="techdailyreport.jsp">TECHNICIAN DAILY REPORT FORM</a>'
+<!--menu2[3]='<a href="specialreport.jsp">SPECIAL REPORT FORM</a>' -->
+menu2[4]='<a href="incommingcalls.jsp">CALL CAPTURE FORM</a>'
+menu2[5]='<a href="changepassword.jsp">CHANGE PASSWORD</a>'
+menu2[6]='<a href="techattend.jsp">TECH ATTENDANCE</a>'
+menu2[7]='<a href="techspcomment.jsp?comment=techunit">SPECIAL COMMENT</a>'
+menu2[8]='<a href="pendingunitsreport.jsp">UNITS PENDING.</a>'
+menu2[0]='<a href="addvehtogrp.jsp">ADD VEHICLE TO GROUP</a>'
+/* menu2[10]='<a href="EditEmpName.jsp">ADD/EDIT EMP NAME</a>' */
+menu2[11]='<a href="vehiclegroupentry.jsp">ADD/DELETE GROUP</a>'
+menu2[12]='<a href="castrolroutes.jsp">Route Master Entry</a>'	
+menu2[13]='<a href="unitTransferToTechnician.jsp">Pending Unit Transfer</a>'
+
+
+//menu2[14]='<a href="FieldTesting.jsp">FieldTesting</a>'			
+
+menu3[0]='<a href="viewfoultyvehicles.jsp">DATA DELAY</a>'
+menu3[1]='<a href="mydiary.jsp">VEHICLE AVAILABLE</a>'
+menu3[2]='<a href="complaintsoverdue.jsp">COMPLAINTS OVER-DUE</a>'
+menu3[3]='<a href="outgoingcall.jsp">OUTGOING CALLS</a>'
+menu3[4]='<a href="incomingcalls.jsp">INCOMING CALLS</a>'
+menu3[5]='<a href="complaintcharges.jsp">COMPLAINT CHARGES</a>'
+menu3[6]='<a href="multiplesearch.jsp">MULTIPLE SEARCH</a>'
+menu3[7]='<a href="closetechspcomment.jsp">SPECIAL COMMENT (Report)</a>'
+menu3[8]='<a href="reprovisionrep.jsp">RE-PROVISION NOs.</a>'
+menu3[9]='<a href="confirmreprovnos.jsp">CONFIRM RE-PROVISION NOs.</a>'  
+menu3[10]='<a href="transferreport.jsp">TRANSFER UNIT REPORT</a>'
+
+
+
+menu4[0]='<a href="manufdispdets.jsp">UNIT TRANSACTION</a>'
+
+
+menu5[0]='<a href="viewfoultyvehicles.jsp">DATA DELAY</a>'
+menu5[1]
+menu5[2]='<a href="mydiary.jsp">VEHICLE AVAILABLE</a>'
+menu5[3]='<a href="complaintsoverdue.jsp">COMPLAINTS OVER-DUE</a>'
+menu5[4]='<a href="outgoingcall.jsp">OUTGOING CALLS</a>'
+menu5[5]='<a href="incomingcalls.jsp">INCOMING CALLS</a>'
+menu5[6]='<a href="multiplesearch.jsp">MULTIPLE SEARCH</a>'
+menu5[7]='<a href="reprovisionrep.jsp">RE-PROVISION NOs.</a>'
+menu5[8]='<a href="confirmreprovnos.jsp">CONFIRM RE-PROVISION NOs.</a>' 
+menu5[9]='<a href="Allcontact.jsp">ALL CONTACT</a>'
+menu5[10]='<a href="Simtrack.jsp">SIM SEARCH</a>'
+menu5[11]='<a href="ftplastdump.jsp">FTPLASTDUMP</a>'
+menu5[12]='<a href="transitunit.jsp">IN-TRANSIT UNIT</a>'
+menu5[13]='<a href="transferreport.jsp">TRANSFER UNIT REPORT</a>'
+menu5[14]='<a href="OfflineUnitData.jsp">OFFLINE UNIT DATA</a>'
+	menu5[15]='<a href="dragondroid.jsp">DRAGONDROID REPORT</a>'
+
+
+
+
+
+	<!-- menu6[0]='<a href="remuittemp.jsp">TEMP REMOVAL</a>' -->
+	<!-- menu6[1]='<a href="removeunit.jsp">PERM REMOVAL</a>' -->
+	<!-- menu6[3]='<a href="unitmissing.jsp">UNIT MISSING(Entry Form)</a>' -->
+	<!--menu6[5]='<a href="transferreport.jsp">TRANSFER UNIT REPORT</a>' -->
+	<!--menu6[11]='<a href="mobiledeactivation.jsp">MOBILE DE-ACTIVATION FORM</a>'-->
+	<!--menu6[6]='<a href="trackunit.jsp">TRACK UNIT</a>' -->
+menu6[0]='<a href="assigntrans.jsp">ASSIGN TRANSPORTER</a>'  
+menu6[1]='<a href="reconcillationunits.jsp">RECONCILLATION</a>'
+menu6[2]='<a href="showmissingunits.jsp">UNIT MISSING [Report]</a>' 
+menu6[3]='<a href="unitholding.jsp">UNIT HOLDING</a>'
+menu6[4]='<a href="ReportSpecialreport.jsp">SPECIAL REPORT</a>'
+menu6[5]='<a href="reportt.jsp">ALL REPORT</a>'
+menu6[6]='<a href="pendingunitsreportexcel2.jsp"> PENDING UNITS(Tech)</a>'
+menu6[7]='<a href="pendingunitsreportexcel1.jsp"> PENDING UNITS(Cust)</a>'
+menu6[8]='<a href="editrecordreport.jsp"> EDIT REPORT</a>'
+menu6[9]='<a href="transportermaster.jsp">TRANSPORTER MASTER</a>'
+menu6[10]='<a href="transporterdetails.jsp">ADD/EDIT TRANSPORTER DETAILS</a>'	
+menu6[11]='<a href="specialcmmtentryform.jsp">ADD SPECIAL COMMENTS</a>' 
+menu6[12]='<a href="AddDropDown.jsp">ADD/Edit DropDown List</a>' 
+menu6[13]='<a href="template.jsp">Create Template</a>' 
+menu6[14]='<a href="singleunittransfer.jsp">UNITS TRANSFER BY COURIER</a>'
+menu6[15]='<a href="SmsSendToParameter.jsp">SMS Parameter Report</a>'	
+menu6[16]='<a href="addinstn1.jsp">Add Instruction</a>'		
+menu6[17]='<a href="addvehtyp.jsp">Add Vehicle Type</a>'	
+menu6[18]='<a href="reprovisionreport.jsp">Reprovision Report</a>'	
+			
+
+<!-- menu7[2]='<a href="unitmissing.jsp">UNIT MISSING(Entry Form)</a>' -->
+<!-- menu7[3]='<a href="showmissingunits.jsp">UNIT MISSING [Report]</a>'  -->
+<!--menu7[3]='<a href="trackunit.jsp">TRACK UNIT</a>'  -->
+menu7[0]='<a href="remuittemp.jsp">TEMP REMOVAL</a>'
+menu7[1]='<a href="removeunit.jsp">PERM REMOVAL</a>'
+menu7[2]='<a href="unitholding.jsp">UNIT HOLDING</a>' 
+menu7[3]='<a href="ReportSpecialreport.jsp">SPECIAL REPORT</a>'
+menu7[4]='<a href="pendingunitsreport.jsp">UNITS PENDING.</a>'
+
+menu8[0]='<a href="Serv_provider_mail.jsp">SERVICE PROVIDER MAIL ID</a>'
+menu8[1]='<a href="mobiledeactive_multiple.jsp">MULTIPLE MOBILE DE-ACTIVATION FORM</a>'
+menu8[2]='<a href="employee.jsp">Employee details</a>'	
+//menu8[3]='<a href="	detailsOfIncidentReport.jsp">Incident Details Report</a>'
+
+menu8[3]='<a href="DetailsIncident.jsp">Incident Details Report</a>'
+menu8[3]='<a href="IncidentReport.jsp">Incident Report</a>'
+//menu8[4]='<a href="#">Add Instruction</a>'	
+menu9[0]='<a href="QuickTestReport.jsp">QuickTest REPORT</a>'
+
+
+
+var menuwidth='165px' //default menu width
+var menubgcolor='lightgray'  //menu bgcolor
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top="-500px"
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+
+</script>
+</head>
+<body>
+<div align="left">
+</body>
+</html>

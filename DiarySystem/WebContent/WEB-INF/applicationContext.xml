@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans 
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.springframework.org/schema/jee
+    http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+
+	<bean id="jndiDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="java:comp/env/jdbc/diary"/>
+	</bean>
+
+    <bean id="unitDetailsDao"
+    	  class="com.transworld.diary.springframework.UnitDaoSpringBeanImpl"
+    	  scope="singleton">
+        <constructor-arg>
+            <ref bean="jndiDataSource"/>
+        </constructor-arg>
+    </bean>
+    
+    <bean id="consolidatedUnitDataProvider" 
+    	  class="com.transworld.diary.springframework.ConsolidatedUnitDataProviderSpringBeanImpl"    
+    	  scope="singleton">
+    </bean>
+</beans>
