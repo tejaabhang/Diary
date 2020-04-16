@@ -15,6 +15,9 @@
 <%@ page  import="org.jfree.data.general.*" %>
 
 <%
+
+
+
             final double[][] data = new double[][]{
                 {210, 300, 320, 265, 299},
                 {200, 304, 201, 201, 340}
